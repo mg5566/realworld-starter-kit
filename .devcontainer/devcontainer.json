@@ -8,8 +8,19 @@
 		"vscode": {
 			"extensions": [
 				"eamodio.gitlens",
-				"ms-vscode.vscode-typescript-next"
+				"ms-vscode.vscode-typescript-next",
+				"esbenp.prettier-vscode",
+				"GitHub.copilot"
 			]
+		}
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/node:1": {
+			"nodeGypDependencies": true,
+			"version": "lts"
+		},
+		"ghcr.io/devcontainers-contrib/features/jshint:2": {
+			"version": "latest"
 		}
 	}
 
