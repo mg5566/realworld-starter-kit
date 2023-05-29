@@ -1,11 +1,11 @@
 import Footer from '@/components/Footer'
-import NavBar from '@/components/NavBar'
 import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
   return (
   <Html>
     <Head>
+      {/* NextJS 에서 styleSheet 을 이렇게 사용하는 것은 좋은 방법이 아니지만 style template 이 CDN 으로 제공되기 때문에 방법이 없음. */}
       <link
         href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
         rel="stylesheet"
@@ -20,7 +20,6 @@ export default function Document() {
       <link rel="stylesheet" href="//demo.productionready.io/main.css" />
     </Head>
     <body>
-      <NavBar />
       <Main />
       <NextScript />
       <Footer />
