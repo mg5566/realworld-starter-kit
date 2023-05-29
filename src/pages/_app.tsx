@@ -1,15 +1,16 @@
+import NavBar from '@/components/NavBar'
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      {/* head 를 여기서 사용하지 말라고 나옵니다. */}
       <Head>
-        <meta charSet="utf-8" />
-        <title>Conduit | Mike Realworld project</title>
+      <title>Conduit | Mike Realworld project</title>
       </Head>
+      <NavBar />
       <Component {...pageProps} />
     </>
   )
